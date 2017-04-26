@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="nhanquach.com.homework02.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:text="Taco World!"
+        android:id="@+id/header"
+        android:layout_marginBottom="0px"/>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:id="@+id/leftC">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:id="@+id/tx1"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx1"
+            android:id="@+id/size">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:id="@+id/large"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:id="@+id/med"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/leftC"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="100px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tortilla"
+            android:id="@+id/tx2"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx2"
+            android:id="@+id/tortilla">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corn"
+                android:id="@+id/corn"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flour"
+                android:id="@+id/flour"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftC"
+        android:id="@+id/CenterC"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fillings"
+            android:textAlignment="center"
+            android:id="@+id/fillings"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fillings"
+            android:text="Beef"
+            android:id="@+id/beef"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beef"
+            android:text="Chicken"
+            android:id="@+id/chicken"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chicken"
+            android:text="White Fish"
+            android:id="@+id/whitefish"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/whitefish"
+            android:text="Cheese"
+            android:id="@+id/cheese"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cheese"
+            android:text="Sea food"
+            android:id="@+id/seafood"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fillings"
+            android:layout_toEndOf="@id/whitefish"
+            android:layout_marginLeft= "150px"
+            android:text="Rice"
+            android:id="@+id/rice"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rice"
+            android:layout_toEndOf="@id/whitefish"
+            android:layout_marginLeft= "150px"
+            android:text="Beans"
+            android:id="@+id/beans"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beans"
+            android:layout_toEndOf="@id/whitefish"
+            android:layout_marginLeft= "150px"
+            android:text="Pico de Gallo"
+            android:id="@+id/picodegallo"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picodegallo"
+            android:layout_toEndOf="@id/whitefish"
+            android:layout_marginLeft= "150px"
+            android:text="Guacamole"
+            android:id="@+id/guacamole"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guacamole"
+            android:layout_toEndOf="@id/whitefish"
+            android:layout_marginLeft= "150px"
+            android:text="LBT"
+            android:id="@+id/lbt"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CenterC"
+        android:id="@+id/bottomC"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beverage"
+            android:textAlignment="center"
+            android:id="@+id/beverage"
+            android:textStyle="bold"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beverage"
+            android:text="Soda"
+            android:id="@+id/soda" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/soda"
+            android:text="Cerveza"
+            android:id="@+id/cerveza" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/beverage"
+            android:layout_toEndOf="@id/cerveza"
+            android:layout_marginLeft="175px"
+            android:text="Margarita"
+            android:id="@+id/margarita" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/margarita"
+            android:layout_toEndOf="@id/cerveza"
+            android:layout_marginLeft="175px"
+            android:text="Tequila"
+            android:id="@+id/tequila" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomC"
+        android:text="Place Your Order"
+        android:layout_marginTop="20px"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button"/>
+
+</RelativeLayout>
