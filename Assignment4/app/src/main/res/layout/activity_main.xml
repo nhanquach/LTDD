@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="rta.phatnguyen.assignment4.Activity.MainActivity"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="Cookie Monster 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monster1"
+                android:gravity="center"
+                android:textStyle="normal|bold"
+                android:textSize="40dp" />
+
+            <TextView
+                android:text="Total cookies eaten so far ... "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cookie1" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress1"
+                android:minHeight="30dp"
+                android:progressTint="#009688"
+                android:progress="0"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:text="Cookie Monster 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/monster2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|bold"
+            android:textSize="40dp" />
+
+        <TextView
+            android:text="Total cookies eaten so far ..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cookie2" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress2"
+            android:minHeight="30dp"
+            android:progressTint="#009688"
+            android:progress="0"/>
+
+        <TextView
+            android:text="Grandma's oven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grandma"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal|bold"
+            android:textSize="40dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Total cookies baked so far ..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cookie3"
+                android:layout_weight="3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <com.todddavies.components.progressbar.ProgressWheel
+                android:id="@+id/spinner"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                ProgressWheel:pwText=""
+                ProgressWheel:pwTextColor="#222"
+                ProgressWheel:pwTextSize="14sp"
+                ProgressWheel:pwRimColor="#330097D6"
+                ProgressWheel:pwBarLength="60dp"
+                ProgressWheel:pwBarColor="#009688"
+                ProgressWheel:pwBarWidth="5dp"
+                ProgressWheel:pwRimWidth="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="244dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:text="Simulation Clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv4"
+            android:textSize="14dp"
+            android:textStyle="normal|bold" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress3"
+            android:minHeight="30dp"
+            android:progressTint="#009688"
+            android:progress="0"
+            android:max="120"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/CancelBtn"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:text="Start over"
+                android:layout_height="40dp"
+                android:id="@+id/StartBtn"
+                android:layout_width="110dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/CancelBtn" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
