@@ -8,6 +8,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,7 @@ import java.io.IOException;
 public class ReadingActivity extends AppCompatActivity {
 
     TextView content, articalTitle, articleAuthor, articlePubdate;
-    ImageView imageView;
+    ImageView imageView, imageView2;
     Button btn;
 
     @Override
@@ -44,6 +45,7 @@ public class ReadingActivity extends AppCompatActivity {
 
 
         imageView = (ImageView) findViewById(R.id.imgThumbnail);
+        imageView2 = (ImageView) findViewById(R.id.imgThumbnail2);
         articalTitle = (TextView) findViewById(R.id.ArticleTitle);
         articleAuthor = (TextView) findViewById(R.id.ArticleAuthor);
         articlePubdate = (TextView) findViewById(R.id.ArticlePub);
@@ -55,6 +57,7 @@ public class ReadingActivity extends AppCompatActivity {
 
         try {
             imageView.setImageBitmap(LoadImage.loadBitmap(single_news.getThumbnail()));
+            imageView2.setImageBitmap(LoadImage.loadBitmap(single_news.getThumbnail()));
         } catch (IOException e) {
             e.printStackTrace();
         }

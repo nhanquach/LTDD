@@ -38,7 +38,7 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:id="@+id/imgThumbnail"
+            android:id="@+id/imgThumbnail2"
             android:src="@mipmap/ic_launcher"
             android:layout_below="@id/ArticlePub"
             android:layout_marginTop="5dp"
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/content"
-            android:layout_below="@id/imgThumbnail">
+            android:layout_below="@id/imgThumbnail2">
         </TextView>
 
         <Button

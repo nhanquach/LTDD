@@ -22,6 +22,15 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imgThumbnail"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:layout_collapseParallaxMultiplier="-10"/>
+
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -29,6 +38,8 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
 
             </android.support.v7.widget.Toolbar>
 
