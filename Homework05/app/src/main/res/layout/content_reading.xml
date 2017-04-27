@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nhan.quach.homework05.ReadingActivity"
+    tools:showIn="@layout/activity_reading"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/text_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ArticleTitle"
+            android:text="Sample Title"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:layout_below="@id/ArticleTitle"
+            android:id="@+id/ArticleAuthor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PubDate"
+            android:layout_below="@id/ArticleAuthor"
+            android:id="@+id/ArticlePub"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/imgThumbnail"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@id/ArticlePub"
+            android:layout_marginTop="5dp"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:layout_below="@id/imgThumbnail">
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Read more"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:id="@+id/btn"
+            android:layout_below="@id/content"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
