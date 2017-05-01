@@ -1,12 +1,16 @@
 package nhanquach.com.homework02;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
@@ -24,12 +28,13 @@ public class MainActivity extends AppCompatActivity {
     CheckBox beef, chicken, white_fish, cheese, seafood, rice, beans, pico, gua, lbt;
     CheckBox soda, cerveza, margarita, tequila;
     RadioButton large, medium, corn, flour;
+    String resultString = "You choose: ";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);RelativeLayout activitymain = (RelativeLayout) findViewById(R.id.activity_main);
+        setContentView(R.layout.activity_main);
 
         buttonSend = (Button) findViewById(R.id.button);
 
@@ -56,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
         corn = (RadioButton) findViewById(R.id.corn);
         flour = (RadioButton) findViewById(R.id.flour);
 
+
         //Click buttonSend
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String resultString = "You choose: ";
                 if (RGTortilla.getCheckedRadioButtonId() > -1
                         && RGsize.getCheckedRadioButtonId() > -1) {
                     RadioButton tempR = (RadioButton)
@@ -68,45 +73,122 @@ public class MainActivity extends AppCompatActivity {
                     resultString = resultString + ""+ tempR.getText().toString() +" size, ";
                     tempR = (RadioButton)
                             findViewById(RGTortilla.getCheckedRadioButtonId());
-                    resultString = resultString + " tortilla: "+ tempR.getText().toString()
-                            +". \n Fillings: ";
+                    resultString = resultString + " tortilla: "+ tempR.getText().toString();
                 }else {
-                    resultString = "You need to choose Size and Tortilla.";
+                    resultString = "";
                 }
 
+                int fla = 0;
+                String tempString = "";
                 List<CheckBox> fillings = new ArrayList<CheckBox>();
                 fillings.add(beef);fillings.add(chicken); fillings.add(white_fish);
                 fillings.add(beans);fillings.add(cheese); fillings.add(seafood);
                 fillings.add(rice); fillings.add(pico); fillings.add(gua); fillings.add(lbt);
                 for (CheckBox fill : fillings){
                     if (fill.isChecked()){
-                        resultString += " " + fill.getText().toString() +" ";
+                        tempString += " " + fill.getText().toString() + ", ";
+                        fla++;
                     }
                 }
+                if (fla > 0){
+                    tempString = tempString.substring(0, tempString.length() - 2);
+                    resultString += "\nFillings: " + tempString;
+                }
 
-                resultString += "\n Beverage:";
+                tempString = "";
+                fla = 0;
 
                 List<CheckBox> beverage = new ArrayList<CheckBox>();
                 beverage.add(soda); beverage.add(margarita);
                 beverage.add(cerveza); beverage.add(tequila);
                 for (CheckBox b : beverage){
                     if (b.isChecked()){
-                        resultString += " " + b.getText().toString() + " ";
+                        tempString += " " + b.getText().toString() + ", ";
+                        fla++;
                     }
+                }
+
+                if (fla > 0){
+                    tempString = tempString.substring(0, tempString.length() - 2);
+                    resultString += "\nBeverage: " + tempString;
                 }
 
                 resultString+= ".";
 
-                Toast toast = Toast.makeText(getBaseContext(), resultString, Toast.LENGTH_SHORT);
-                toast.show();
+                final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Send message");
+                //Add Text and Input to dialog
 
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage("5554", null, resultString,null, null);
+                final EditText input = new EditText(MainActivity.this);
+
+                String[] NameArray = {"Enter a phone number","Myself","People 1", "People 2"};
+                final String[] PhoneArray = {"","5554","5555", "5556"};
+
+                //Buttons
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        resultString = "";
+                        dialog.cancel();
+                    }
+                });
+
+                input.setInputType(InputType.TYPE_CLASS_NUMBER);
+                //builder.setView(input);
+
+                builder.setItems(NameArray, new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int which) {
+                        // The 'which' argument contains the index position
+                        // of the selected item
+                        if (which != 0) {
+                            sendMessage(PhoneArray[which], resultString);
+                            resultString = "";
+                        } else {
+                            final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                            builder.create();
+                            builder.setTitle("Send message");
+                            builder.setMessage("Number to send order message to:");
+                            builder.setView(input);
+                            builder.setPositiveButton("Send", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    String PhoneNumber = input.getText().toString();
+                                    sendMessage(PhoneNumber, resultString);
+                                    resultString = "";
+                                }
+                            });
+                            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                    resultString = "";
+                                }
+                            });
+                            builder.show();
+                        }
+                    }
+                });
+                builder.show();
             }
         });
 
+        resultString = "";
     }
 
+    private void sendMessage(String Phone, String message) {
 
+        if (Phone.isEmpty()){
+            Toast toast = Toast.makeText(getBaseContext(), "Phone number invalid", Toast.LENGTH_SHORT);
+            toast.show();
+        } else {
+            Toast toast = Toast.makeText(getBaseContext(), message, Toast.LENGTH_SHORT);
+            toast.show();
+
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(Phone, null, message,null, null);
+        }
+    }
 
 }
