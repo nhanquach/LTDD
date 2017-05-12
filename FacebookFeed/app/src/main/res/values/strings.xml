@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FacebookFeed</string>
+    <string name="facebook_app_id">1401783669911748</string>
+    <string name="fb_login_protocol_scheme">fb1401783669911748</string>
+    <string name="title_activity_tab">Tab</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

@@ -1,0 +1,7 @@
+#Fri May 12 11:32:16 ICT 2017
+base.0=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_73affa8eb4e57d12aafdf50babfd0abb6be9cac8
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f89d2837460d51e83615de1bdb1e10a702132c/classes.dex
+base.1=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f89d2837460d51e83615de1bdb1e10a702132c
+file.0=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_73affa8eb4e57d12aafdf50babfd0abb6be9cac8/classes.dex
