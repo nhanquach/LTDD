@@ -41,7 +41,8 @@
         <activity
             android:name=".Tab"
             android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FriendFeed"></activity>
     </application>
 
 </manifest>

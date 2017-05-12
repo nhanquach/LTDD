@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri May 12 11:32:16 ICT 2017
+#Fri May 12 22:06:24 ICT 2017
 8.set=ANDROID_RESOURCE
 1.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
 1.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/layout/custom_notification.xml
@@ -10,7 +10,7 @@
 5.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/layout/feed.xml
 7.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
 7.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_test_front_end.xml
-11.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/raw/lgaga.txt
+11.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/raw/rblack.txt
 11.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
 9.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f89d2837460d51e83615de1bdb1e10a702132c
 9.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e0f89d2837460d51e83615de1bdb1e10a702132c/classes.dex
@@ -29,7 +29,7 @@
 6.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
 6.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
 10.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
-10.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/raw/rblack.txt
+10.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/raw/lgaga.txt
 8.base=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_
 8.file=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/res/resources-debug.ap_/res/raw/tswift.txt
 2.set=ANDROID_RESOURCE

@@ -1,7 +1,10 @@
 package course.labs.locationlab;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -34,6 +37,7 @@ public class PlaceViewActivity extends ListActivity implements LocationListener 
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate (savedInstanceState);
+
 		// Set up the app's user interface. This class is a ListActivity, so it has its own ListView. ListView's adapter should be a PlaceViewAdapter
 		mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		ListView placesListView = getListView ();

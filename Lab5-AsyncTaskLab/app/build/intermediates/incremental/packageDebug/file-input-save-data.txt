@@ -1,30 +1,33 @@
 #Internal package file, do not edit.
-#Fri May 12 10:21:56 ICT 2017
+#Fri May 12 22:15:11 ICT 2017
 2.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
-5.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
-5.set=ANDROID_RESOURCE
-3.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-6.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/resources.arsc
+5.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f99290ad0c9a9c9034d2764b273242849cf08629/classes.dex
+5.set=DEX
+3.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8013e8c1cc549216ccd91dd3590dc6b05c1a8670
+6.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_main.xml
 2.set=ANDROID_RESOURCE
 4.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
-7.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
+7.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/resources.arsc
 7.set=ANDROID_RESOURCE
-count=9
+count=10
 0.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/ic_launcher.png
-5.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
-8.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/raw/lgaga.txt
+5.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f99290ad0c9a9c9034d2764b273242849cf08629
+8.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/AndroidManifest.xml
 4.set=ANDROID_RESOURCE
 6.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
 1.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/raw/tswift.txt
+9.set=ANDROID_RESOURCE
+9.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/raw/lgaga.txt
 1.set=ANDROID_RESOURCE
 7.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
 2.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/layout/feed.xml
 6.set=ANDROID_RESOURCE
 0.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
 8.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
-3.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+3.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8013e8c1cc549216ccd91dd3590dc6b05c1a8670/classes.dex
 3.set=DEX
 1.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
+9.base=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_
 4.file=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/res/resources-debug.ap_/res/raw/rblack.txt
 8.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE

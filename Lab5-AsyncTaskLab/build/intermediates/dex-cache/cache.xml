@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da5ebb53bede3cf76e6636b203c79b1f583e38f9">
+        <dex dex="/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8013e8c1cc549216ccd91dd3590dc6b05c1a8670/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f99290ad0c9a9c9034d2764b273242849cf08629/classes.dex" />
+    </item>
+
+</items>

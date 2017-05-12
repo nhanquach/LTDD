@@ -1,17 +1,12 @@
 package com.nhan.quach.facebookfeed;
 
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.GraphRequest;
@@ -57,14 +52,11 @@ public class Tab_1 extends Fragment {
                         //Log.d("feed", "onCompleted: " + post);
                         //Posts.add(post);
                         messages.add(mess);
-                        Log.d("fb", "running: " + messages);
                     }
 
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-                Log.d("fb", "onCompleted: " + messages);
                 ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, messages);
                 listView.setAdapter(adapter);
             }

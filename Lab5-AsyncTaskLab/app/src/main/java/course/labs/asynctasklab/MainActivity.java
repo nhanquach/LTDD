@@ -26,7 +26,7 @@ public class MainActivity extends Activity implements SelectionListener,
 	static final String TAG_TWEET_DATA = "data";
 	static final String TAG_FRIEND_RES_IDS = "friends";
 	public final static String[] FRIENDS_NAMES = { "taylorswift13",
-			"msrebeccablack", "ladygaga" };
+			"msrebeccablack", "ladygaga01" };
 
 	@SuppressWarnings("unused")
 	private static final String TAG = "Lab-Threads";

@@ -1,4 +1,4 @@
-#Fri May 12 11:32:16 ICT 2017
+#Fri May 12 22:06:24 ICT 2017
 base.0=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
 renamed.0=classes.dex
 file.0=/Users/nhan/Github/LTDD/Lab6_NotificationsLab/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex

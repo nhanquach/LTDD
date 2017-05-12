@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         loginButton = (LoginButton) findViewById(R.id.loginBtn);
         tv = (TextView) findViewById(R.id.textView);
 
-        loginButton.setReadPermissions(Arrays.asList("email", "user_about_me", "user_birthday", "user_posts", "user_friends"));
+        loginButton.setReadPermissions(Arrays.asList("email", "user_about_me", "user_birthday", "user_posts", "user_friends", "read_custom_friendlists"));
 
-        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "user_about_me", "user_birthday", "user_posts", "read_custom_friendlists"));
+        LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "user_about_me", "user_birthday", "user_posts", "read_custom_friendlists", "user_friends"));
 
 
         callbackManager = CallbackManager.Factory.create();

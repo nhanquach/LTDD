@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab8_LocationLab/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9919eeab48260574465dfb8da68feb859953344">
+        <dex dex="/Users/nhan/Github/LTDD/Lab8_LocationLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9921966cd23b8af67efe3689ba130656e757f392/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab8_LocationLab/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/nhan/Github/LTDD/Lab8_LocationLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6db70f55a585cd7a58ac962735136814ba2a5816/classes.dex" />
+    </item>
+
+</items>

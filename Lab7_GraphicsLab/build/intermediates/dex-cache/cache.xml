@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab7_GraphicsLab/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffc9f5a51174af135fb3705c7bf0465845028d67">
+        <dex dex="/Users/nhan/Github/LTDD/Lab7_GraphicsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e66be3c556bfbf916d2d0e71514c054ee7eb8e69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nhan/Github/LTDD/Lab7_GraphicsLab/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/nhan/Github/LTDD/Lab7_GraphicsLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d23aa3a405aa9f3384403a17a43d23aab7927c5f/classes.dex" />
+    </item>
+
+</items>

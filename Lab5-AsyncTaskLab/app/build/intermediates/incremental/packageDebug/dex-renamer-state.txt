@@ -1,4 +1,7 @@
-#Fri May 12 10:21:56 ICT 2017
-base.0=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Fri May 12 22:15:11 ICT 2017
+base.0=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f99290ad0c9a9c9034d2764b273242849cf08629
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.1=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8013e8c1cc549216ccd91dd3590dc6b05c1a8670/classes.dex
+base.1=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8013e8c1cc549216ccd91dd3590dc6b05c1a8670
+file.0=/Users/nhan/Github/LTDD/Lab5-AsyncTaskLab/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f99290ad0c9a9c9034d2764b273242849cf08629/classes.dex
